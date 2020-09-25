@@ -1,0 +1,54 @@
+{
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "git-commit",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pug",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scala",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "react",
+    "yaml",
+    "yml"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[react]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.validate": ["typescript","react"],
+}
