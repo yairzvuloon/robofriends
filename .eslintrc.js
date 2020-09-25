@@ -1,10 +1,18 @@
 module.exports = {
+  extends: 'eslint:recommended',
   env: {
     browser: true,
     es6: true,
     node: true,
   },
-  extends: ['plugin:react/recommended', 'eslint:recommended'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    'plugin:react/recommended',
+    'eslint:recommended',
+    'plugin:sonarjs/recommended',
+    'plugin:prettier/recommended',
+  ],
   root: true,
   parserOptions: {
     parser: 'babel-eslint',
@@ -13,8 +21,15 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react', '@typescript-eslint'],
-  rules: {},
+  plugins: ['react', '@typescript-eslint', 'sonarjs'],
+  rules: {
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'jsx-quotes': [2, 'prefer-single'],
+    'sonarjs/prefer-immediate-return': 0,
+    curly: 2,
+    'arrow-parens': ['error', 'as-needed'],
+  },
   settings: {
     react: {
       createClass: 'createReactClass', // Regex for Component Factory to use,
